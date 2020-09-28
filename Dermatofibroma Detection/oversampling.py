@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Version 2
-=======
-
-# Trying branch2
->>>>>>> branch2
-=======
-
->>>>>>> branch2
 # Code for the Resnet 50 model is built on top of the starter code from Andrew Ng's Deep Learning Specialization course 
-# Trying branch2
 
 import numpy as np
 from keras import layers
