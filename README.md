@@ -43,7 +43,7 @@ from the two classes.
 
 * Focal Loss:  The basic idea is to give higher weights to training examples which are misclassified during an iteration of training. This loss function should prioritize, adaptively ,the samples of minority classes as these samples, being under-represented, are likely to be misclassified during the early phases of training. The focal loss is given by: −((ypred)γ ∗log(1−ypred)+(1−ypred)γ ∗log(ypred).
 
-* F2 Loss:  As the target metric of interest to us is the F2 metric, it might be better to motivate a loss function that is related to this evaluation metric.  The resulting formulation is then given as: 1 − (5∗precision∗recall)/4∗precision+recall.
+* F2 Loss:  As the target metric of interest to us is the F2 metric, it might be better to motivate a loss function that is related to this evaluation metric.  The resulting formulation is then given as: 1 − (5∗precision∗recall)/4∗precision+recall).
 
 
 
