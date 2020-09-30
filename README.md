@@ -6,12 +6,12 @@ Most of the datasets for machine learning tasks in the clinical domain are highl
 
 ## Data:
 
-# Dermatafibroma Lesion detection
+### Dermatafibroma Lesion detection
 
 We use the [HAM1000 Dataset](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6091241/) for the task of Dermatofibroma detection. The dataset contains a large collection of multi-source dermatoscopic images of pigmented lesions. It contains 10015 dermatoscopic images from 7 categories of pigmented lesions. Only 115 of these images are from the dermatofibroma class and rest of the images will be classified as non-dermatofibroma class. Therefore the class imbalance is
 high ( 1:100).
 
-# Schizophrenia relapse prediction
+### Schizophrenia relapse prediction
 
 The dataset consists of mobile sensing data from 63 schizophrenia patients monitored for about 12 months period. For each of the patients, the dataset consists of various sensor recordings such as accelerometer, activities, audio inferences, call logs, lights, locations collected from their mobile phone. The ground truth about the relapse information is obtained from the clinical notes prepared by medical professional in charge of the patient. The ratio of weeks with relapse to the weeks
 without relapse is very low ( 1:500).
@@ -20,12 +20,12 @@ without relapse is very low ( 1:500).
 
 In data resampling techniques, the underlying data is re-sampled before being made  input to the model for training such that gradients from training examples of both the classes dictate the weight adaptation of deep learning models equally. The two main sampling techniques included where:
 
-# Oversampling
+### Oversampling
 
 As the name suggests, in oversampling the minority class is oversampled to match
 the representation from the majority class. At the end, the training dataset size increases. Although this sampling technique brings back the blance in our dataset, it might not be feasible when the dataset is already large.
 
-# Undersampling
+### Undersampling
 
 The majority class is sub-sampled to match the representation of minority class and the overall training dataset decreases. Useful when the dataset is already large enough.
 
