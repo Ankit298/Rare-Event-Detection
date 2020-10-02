@@ -1,4 +1,4 @@
-# Code for the Resnet 50 model is built on top of the starter code from Andrew Ng's Deep Learning Specialization course 
+# Code for the Resnet 50 model with oversampling implemented
 
 import numpy as np
 from keras import layers
@@ -246,11 +246,11 @@ def ResNet50(input_shape = (64, 64, 1), classes = 2):
 
 model = ResNet50(input_shape = (64, 64, 1), classes = 2)
 
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) # Compile model
 
-model.fit(X_train, y_train, epochs = 50, batch_size = 32)
+model.fit(X_train, y_train, epochs = 50, batch_size = 32) #Fit model
 
-Loss, test_acc = model.evaluate(X_test, y_test)
+Loss, test_acc = model.evaluate(X_test, y_test) # Evaluate model
 
 y_pred = np.argmax(model.predict(X_test), axis=1)
 
